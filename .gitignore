@@ -1,0 +1,18 @@
+files/companies.md
+files/preferences.md
+files/profile.md
+files/shown-jobs.md
+digests/
+notes.md
+HANDOFF.md
+
+# CV or evidence data
+data/
+*.pdf
+*.docx
+
+.env
+*.key
+
+.DS_Store
+.vscode/
