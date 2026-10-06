@@ -1,13 +1,13 @@
 ---
 name: "job-alert-agent"
-description: "Checks the user's fixed list of companies for new job openings in their chosen locations, judges each one against their CV using their fit rules, saves a warm newsletter-style digest and ends with a short apply-list summary. Use this whenever the user asks to run their job check, job alert, job digest or weekly job search, or asks \"any new jobs at my companies?\", and when their weekly scheduled task runs."
+description: "Checks the user's fixed list of companies for new entry-level job openings in their chosen locations, judges each one against their CV using their fit rules, saves a warm newsletter-style digest and ends with a short apply-list summary. Use this whenever the user asks to run their job check, job alert, job digest or weekly job search, or asks \"any new jobs at my companies?\", and when their weekly scheduled task runs."
 ---
 
 # Job Alert Agent
 
 ## Purpose
 
-Find new, fitting jobs at the user's chosen companies, save a warm, readable digest, and finish with a short summary the user can read in a notification: which jobs to apply to, and by when.
+Find new, fitting entry-level jobs at the user's chosen companies, save a warm, readable digest, and finish with a short summary the user can read in a notification: which jobs to apply to, and by when.
 
 ## When to use this
 
@@ -79,7 +79,7 @@ Do not rebuild these files from memory.
 
 The limits below come from the user's dealbreakers in `files/preferences.md`.
 
-- If the posting **requires** a language the user does not have, drop the job.
+- If the posting **requires** a language at a level the user does not have (per `files/preferences.md`), drop the job.
 - If the posting names a language only as **a plus**, keep it.
 - If the posting asks for the user's **maximum years of experience or more**, drop the job, even if the title says junior.
 - If the posting asks for some experience but **less than the limit** (for example one year when the limit is two), keep it but lower the confidence to low.
