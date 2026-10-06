@@ -35,6 +35,7 @@ For each one that is missing, there is a template next to it with the same name 
 
 - If the user is present: copy the templates, then ask the user to fill in `companies.md`, `preferences.md` and `profile.md` before continuing. `shown-jobs.md` can start empty.
 - If nobody is present: do not guess, do not use the example content. Stop and say in the final summary which files are missing.
+- A config file that still contains `[FILL IN` markers counts as not filled in. Treat it as missing, even though it exists.
 
 ## Toolbox
 
