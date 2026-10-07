@@ -1,4 +1,3 @@
-# job-alert
 # How to use the Job Alert Agent
 
 This agent checks a list of companies' careers pages for new entry-level jobs, judges each one against your CV, and saves a short newsletter-style digest. It is a Claude skill: a `SKILL.md` playbook plus files it reads and updates. There is no code to run.
@@ -23,7 +22,7 @@ Use this to try the demo, or if you don't want to install anything.
 
 Use this if you want to trigger it by name from any session.
 
-1. Put the whole repo folder in `~/.claude/skills/job-alert-agent-demo/` (all your projects) or `.claude/skills/job-alert-agent-demo/` (one project).
+1. Put the whole repo folder in `~/.claude/skills/job-alert-skill/` (all your projects) or `.claude/skills/job-alert-skill/` (one project).
 2. Start a new Claude Code session.
 3. Send: **"Run my job alert."**
 

@@ -1,5 +1,5 @@
 ---
-name: "job-alert-agent"
+name: "job-alert-skill"
 description: "Checks the user's fixed list of companies for new entry-level job openings in their chosen locations, judges each one against their CV using their fit rules, saves a warm newsletter-style digest and ends with a short apply-list summary. Use this whenever the user asks to run their job check, job alert, job digest or weekly job search, or asks \"any new jobs at my companies?\", and when their weekly scheduled task runs."
 ---
 
