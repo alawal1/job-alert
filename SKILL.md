@@ -24,18 +24,26 @@ The weekly run usually happens with nobody watching. Do not stop to ask question
 
 The working folder is the folder this SKILL.md sits in, unless the user names another one. All paths below are relative to it.
 
-The user's personal setup lives in four files in `files/`. They are private and are not part of the shared playbook:
+The user's own setup lives in four files in `files/`:
 
 - `files/companies.md`
 - `files/preferences.md`
 - `files/profile.md`
 - `files/shown-jobs.md`
 
-For each one that is missing, there is a template next to it with the same name plus `.example` (for example `files/companies.example.md`).
+This repo also ships a fictional demo persona in `demo/`, so the agent works out of the box:
 
-- If the user is present: copy the templates, then ask the user to fill in `companies.md`, `preferences.md` and `profile.md` before continuing. `shown-jobs.md` can start empty.
-- If nobody is present: do not guess, do not use the example content. Stop and say in the final summary which files are missing.
-- A config file that still contains `[FILL IN` markers counts as not filled in. Treat it as missing, even though it exists.
+- `demo/companies.example.md`
+- `demo/preferences.example.md`
+- `demo/profile.example.md`
+- `demo/shown-jobs.example.md`
+
+**Which setup to use.** Check `companies.md`, `preferences.md` and `profile.md` in `files/`.
+
+- If none of them contains `[FILL IN`, use the files in `files/`. This is the user's own run.
+- If any of them still contains `[FILL IN`, use the demo files in `demo/` instead. Write the first line of the digest as: "Demo run: this used the fictional demo persona, not your own data." Do not stop and do not ask.
+
+In a demo run, read and update the `demo/` files as if they were the `files/` files (for example, save `shown-jobs` changes to `demo/shown-jobs.example.md`), and save the digest to `demo/digests/` instead of `digests/`.
 
 ## Toolbox
 
@@ -47,7 +55,7 @@ Do not rebuild these files from memory.
 - `files/profile.md`: the user's CV and evidence (experience, skills, education, projects). If the user keeps this as several files in `data/`, read those instead. Use it in step 9.
 - `files/fit-rules.md`: the verdict rules for judging fit. Use it in step 9. Judge fit yourself with these rules; do not hand the job to another agent.
 - `files/shown-jobs.md`: every job already shown in a digest. Use it in steps 1, 8 and 13. Do not use it to decide fit; it only prevents repeats.
-- `digests/`: one file per run, named `YYYY-MM-DD.md`. Earlier digests show the expected tone and format. For the first run, `sample-digest.md` shows it.
+- `digests/`: one file per run, named `YYYY-MM-DD.md`. Earlier digests show the expected tone and format. For the first run, `demo/sample-digest.md` shows it.
 - `notes.md`: corrections, one dated line each, newest first.
 
 ## Inputs
@@ -107,8 +115,6 @@ Write it like a short, warm newsletter, not a table or a bare database. Friendly
 - a short summary of the job description
 - why you fit, with the concrete reason behind the verdict
 - the gaps
-- confidence score
-- fit score
 - verdict and confidence
 - the link to the posting, so the user can check it themselves
 
@@ -134,7 +140,7 @@ If nothing fits, say so in one line, plus the companies that could not be checke
 - Every job in the digest passed the place, language and experience rules.
 - No job in the digest appeared in an earlier digest.
 - Every job has a working link.
-- The digest is saved in `examples/sample-digests.md`, `files/shown-jobs.md` is updated, and the final summary was sent.
+- The digest is saved in `digests/` (in a demo run, `demo/digests/`), `files/shown-jobs.md` is updated (in a demo run, the copy in `demo/`), and the final summary was sent.
 
 ## Edge cases
 
