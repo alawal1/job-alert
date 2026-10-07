@@ -1,13 +1,13 @@
 ---
 name: "job-alert-skill"
-description: "Checks the user's fixed list of companies for new entry-level job openings in their chosen locations, judges each one against their CV using their fit rules, saves a warm newsletter-style digest and ends with a short apply-list summary. Use this whenever the user asks to run their job check, job alert, job digest or weekly job search, or asks \"any new jobs at my companies?\", and when their weekly scheduled task runs."
+description: "Checks the user's fixed list of companies for new job openings at their chosen levels and locations, judges each one against their CV using their fit rules, saves a warm newsletter-style digest and ends with a short apply-list summary. Use this whenever the user asks to run their job check, job alert, job digest or weekly job search, or asks \"any new jobs at my companies?\", and when their weekly scheduled task runs."
 ---
 
 # Job Alert Agent
 
 ## Purpose
 
-Find new, fitting entry-level jobs at the user's chosen companies, save a warm, readable digest, and finish with a short summary the user can read in a notification: which jobs to apply to, and by when.
+Find new, fitting jobs at the user's chosen companies, save a warm, readable digest, and finish with a short summary the user can read in a notification: which jobs to apply to, and by when.
 
 ## When to use this
 
@@ -89,7 +89,7 @@ The limits below come from the user's dealbreakers in `files/preferences.md`.
 
 - If the posting **requires** a language at a level the user does not have (per `files/preferences.md`), drop the job.
 - If the posting names a language only as **a plus**, keep it.
-- If the posting asks for the user's **maximum years of experience or more**, drop the job, even if the title says junior.
+- If the posting asks for the user's **maximum years of experience or more**, drop the job, even if the title suggests a lower level. If the maximum is `none`, skip this rule and the next one.
 - If the posting asks for some experience but **less than the limit** (for example one year when the limit is two), keep it but lower the confidence to low.
 - If the posting asks for experience without a number ("some experience", "a few years"), keep it, lower the confidence to low, and say so in the digest so the user checks it themselves.
 - If the job's place is not on the list, drop it, even if the careers page filter showed it.
@@ -141,7 +141,7 @@ If nothing fits, say so in one line, plus the companies that could not be checke
 
 ## Edge cases
 
-- **Junior title but too many years in the text:** has happened before. Always read the requirements; the years rule wins over the title.
+- **Title level doesn't match the text** (e.g. a "junior" title asking for more years than the user's limit): has happened before. Always read the requirements; the years rule wins over the title.
 - **Wrong country despite the filter:** has happened before. Always check the place in the posting itself.
 - **Careers pages that block automatic visits** (such as Workday sites): try a job board or LinkedIn, or ask the user to paste the text in, and report it if nothing works.
 - **LinkedIn and job boards often block automatic visits too** and may not allow it in their rules. Treat them as a backup that may fail, never as the main source.

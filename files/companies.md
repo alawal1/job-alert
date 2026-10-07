@@ -13,7 +13,7 @@ Last checked: [FILL IN: leave as "never", the agent updates this after each run]
 If a link stops working, fix it here, not in the chat.
 
 ## [FILL IN: company name, e.g. Company A]
-- **[FILL IN: country, e.g. Country A]:** [FILL IN: link to the company's own careers page, ideally already searching for entry-level roles in this country]
+- **[FILL IN: country, e.g. Country A]:** [FILL IN: link to the company's own careers page, ideally already filtered to your levels in this country]
   - also run: [FILL IN: other search words worth trying, e.g. `query=intern`, or leave out this line]
 - **[FILL IN: second country, or delete this line]:** [FILL IN: link]
 - **How:** [FILL IN: `fetch` if a plain page fetch shows the jobs, `browser` if the page needs JavaScript to load them, or `unknown`]

@@ -1,6 +1,6 @@
 # Job Alert Skill
 
-This skill checks a list of companies' careers pages for new entry-level jobs, judges each one against your CV, and saves a short newsletter-style digest. It is a Claude skill: a `SKILL.md` playbook plus files it reads and updates. There is no code to run.
+This skill checks a list of companies' careers pages for new jobs at the levels you choose (from internships to senior roles), judges each one against your CV, and saves a short newsletter-style digest. It is a Claude skill: a `SKILL.md` playbook plus files it reads and updates. There is no code to run.
 
 Out of the box it runs on a **fictional demo persona** (a junior data engineer in the Netherlands), so you can see it work before you enter anything of your own.
 

@@ -13,7 +13,7 @@ Credit only what is written in these files. Coursework or "learning" is not the 
 ## 1. Hard filters (before judging fit)
 
 - **Language level:** check only the languages the posting names as *required*. Compare the level the posting asks for with the user's level in `files/preferences.md`. A required level that isn't stated counts as fluent. Fail if the user's level is below what is required. For example: if the posting requires fluent French and the user's French is conversational, the job fails.
-- **Seniority:** acceptable = internship, entry-level, junior, associate, graduate, including "Associate Consultant" at consulting firms. Not acceptable = Senior, Lead, Principal, Staff, Manager, Director, or the years limit in `files/preferences.md`.
+- **Seniority:** acceptable = the levels in `files/preferences.md`, judged by what the posting asks for, not only the title (an "Associate Consultant" can be entry level). Not acceptable = clearly above or below those levels, or the years limit in `files/preferences.md`.
 - If either filter fails, the verdict is **skip** and you stop there.
 
 ## 2. Judging fit

@@ -22,7 +22,7 @@ Remote counts in: [FILL IN: the countries where a remote job is fine, e.g. Count
 
 ## Levels
 
-[FILL IN: the job levels you want, e.g. entry-level, graduate, trainee, junior, internship, traineeship]
+[FILL IN: the job levels you want, e.g. "entry-level, graduate, junior" or "mid-level, senior, lead"]
 
 ## Fields that usually fit
 
@@ -37,5 +37,5 @@ Remote counts in: [FILL IN: the countries where a remote job is fine, e.g. Count
 
 ## Dealbreakers
 
-- **Maximum years of experience:** [FILL IN: a number, e.g. 2]. A posting that asks for this many years or more is dropped, even if the title says junior. Some experience below the limit (for example 1 year when the limit is 2) is kept with low confidence.
+- **Maximum years of experience:** [FILL IN: a number, e.g. 2, or `none` for no limit]. A posting that asks for this many years or more is dropped, even if the title suggests a lower level. Some experience below the limit (for example 1 year when the limit is 2) is kept with low confidence.
 - **Languages:** a posting that requires a language at a level you don't have is dropped. A language named only as a plus is kept.
