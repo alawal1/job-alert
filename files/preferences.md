@@ -1,7 +1,7 @@
 # Preferences
 
 > **How to use this file**
-> 1. Copy it to `files/preferences.md` (same name without `.example`).
+> 1. Look at `demo/preferences.example.md` for an example of filled-in preferences.
 > 2. Replace every `[FILL IN: ...]` with your own answer.
 > 3. Delete these instruction lines when you're done.
 >

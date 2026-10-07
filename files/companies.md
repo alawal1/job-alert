@@ -1,7 +1,7 @@
 # Companies and where to search them
 
 > **How to use this file**
-> 1. Copy it to `files/companies.md` (same name without `.example`).
+> 1. Look at `demo/companies.example.md` for an example of a filled-in company list.
 > 2. Add one block per company you want to check. Copy the block below as often as you need.
 > 3. Replace every `[FILL IN: ...]` with your own value.
 > 4. Delete these instruction lines and the worked example at the bottom.

@@ -47,8 +47,7 @@ In a demo run, read and update the `demo/` files as if they were the `files/` fi
 
 ## Toolbox
 
-Do not rebuild these files from memory.
-
+Do not rebuild these files from memory. In a demo run (see "First-run setup"), wherever a `files/` config path is named below, read the matching `demo/` file instead: `demo/companies.example.md`, `demo/preferences.example.md`, `demo/profile.example.md` and `demo/shown-jobs.example.md`. `files/fit-rules.md` and `files/INDEX.md` are always read from `files/`.
 - `files/INDEX.md`: what each file is for. Read it first.
 - `files/companies.md`: the working search link for each company and country, whether the site needs a simple fetch or the browser, and quirks from earlier runs. Use it in step 2 instead of searching for careers pages. When a link fails, or you find a better one, update the company's block in this file so the next run starts from the fix.
 - `files/preferences.md`: the places in order of preference, work modes, levels, fields, and the user's dealbreakers (languages, maximum years of experience). Use it in steps 3 to 7 and in Decisions.
@@ -106,8 +105,7 @@ The limits below come from the user's dealbreakers in `files/preferences.md`.
 
 ## How the digest should read
 
-Write it like a short, warm newsletter, not a table or a bare database. Friendly, encouraging, honest. Address the user as "you". Open with the number of jobs found and any deadline in the next 14 days. For every job include:
-
+Write it like a short, warm newsletter, not a table or a bare database. Friendly, encouraging, honest. Address the user as "you". In a demo run, the very first line is "Demo run: this used the fictional demo persona, not your own data." Then open with the number of jobs found and any deadline in the next 14 days. For every job include:
 - job name
 - company
 - place and work mode
@@ -130,8 +128,7 @@ The last message of the run, at most about 10 lines, plain text, readable on a p
 - One line per apply job: title, company, city, deadline if any, link.
 - One line listing the borderline jobs by title and company.
 - One line naming any company that could not be checked.
-- Last line: where the full digest is saved (`digests/YYYY-MM-DD.md` in the working folder).
-
+- Last line: where the full digest is saved (`digests/YYYY-MM-DD.md` in the working folder, or `demo/digests/YYYY-MM-DD.md` in a demo run).
 If nothing fits, say so in one line, plus the companies that could not be checked.
 
 ## Definition of done

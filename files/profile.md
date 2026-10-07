@@ -1,7 +1,7 @@
 # Profile (CV and evidence)
 
 > **How to use this file**
-> 1. Copy it to `files/profile.md` (same name without `.example`).
+> 1. Look at `demo/profile.example.md` for an example of a filled-in profile.
 > 2. Replace every `[FILL IN: ...]` with your own content. You can paste text from your CV.
 > 3. Delete these instruction lines when you're done.
 >
