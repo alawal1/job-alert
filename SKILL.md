@@ -109,6 +109,7 @@ Write it like a short, warm newsletter, not a table or a bare database. Friendly
 - the gaps
 - confidence score
 - fit score
+- verdict and confidence
 - the link to the posting, so the user can check it themselves
 
 End with a table of the companies checked and what happened at each, then "Notes from this run" for anything unusual.
@@ -133,7 +134,7 @@ If nothing fits, say so in one line, plus the companies that could not be checke
 - Every job in the digest passed the place, language and experience rules.
 - No job in the digest appeared in an earlier digest.
 - Every job has a working link.
-- The digest is saved in `digests/`, `files/shown-jobs.md` is updated, and the final summary was sent.
+- The digest is saved in `examples/sample-digests.md`, `files/shown-jobs.md` is updated, and the final summary was sent.
 
 ## Edge cases
 
